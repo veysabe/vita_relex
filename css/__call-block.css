@@ -1,0 +1,161 @@
+.call-block {
+	position: relative;
+	font-family: "Montserrat";
+	height: 120px;
+	padding-top: 120px;
+	background-color: #F1F2F6;
+}
+
+.call-block-form {
+	width: 1070px; 
+	height: 200px;
+	margin: auto;
+	background: #002441;
+	border-radius: 10px;
+	margin-top: -220px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.call-block-content h3 {
+	font-weight: bold;
+	font-size: 24px;
+	color: black;
+	margin: 0;
+	color: white;
+}
+
+.call-block-content span {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+}
+
+.call-block-content {
+	height: 106px;
+	width: 910px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.call-block-content__text { 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 106px;
+	width: 290px;
+}
+
+.call-block-content__input {
+	height: 106px;
+	width: 550px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.call-block-content__input-number { 
+	height: 60px;
+	width: 550px;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+.call-block-content__input-number div:nth-child(1) {
+	width: 330px;
+	height: 60px;
+	background: white;
+	border-radius: 10px 0 0 10px;
+	display: flex;
+}
+
+.call-block-content__input-number input[type="text"] {
+	justify-content: center;
+	align-items: center;
+	padding-left: 26px;
+	border: 0;
+	background: none;
+	font-family: Montserrat;
+	font-size: 18px;
+}
+
+.call-block-content__input-number input[type="button"] {
+	width: 220px;
+	height: 60px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #EF7F1A;
+	border-radius: 0 10px 10px 0;
+	outline: 0;
+	border: none;
+	cursor: pointer;
+}
+
+.call-block-content__input-number input[type="text"]::placeholder {
+	font-size: 18px;
+}
+
+.call-block-content__input-checkbox {
+	display: flex;
+	position: relative;
+}
+
+.call-block-content__input-checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.call-block-content__input-checkbox a, .call-block-content__input-checkbox-adapt a {
+	text-decoration: none; 
+	text-decoration-line: underline; 
+	color: #EF7F1A; 
+	cursor: pointer; 
+}
+
+.call-block-content__input-checkbox label {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: white;
+	padding-left: 25px;
+}
+
+.call-block-content__input-checkbox label:after {
+	content: '';
+	display: block;
+	height: 15px;
+	width: 15px;
+	background: white;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.call-block-content__input-checkbox input[type="checkbox"]:checked + label:after {
+	border:2.5px solid #fff;
+	width:10px;
+	height:10px;
+	background-color: #EF7F1A;
+}
+
+.call-block-content__input-checkbox-adapt {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: white;
+	display: none;
+	text-align: center;
+	margin-top: 10px;
+}
+

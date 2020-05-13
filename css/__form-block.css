@@ -1,0 +1,110 @@
+.form-block-q {
+	position: relative;
+	font-family: "Montserrat";
+	height: 500px;
+	background-color: #0065B3;
+	padding-top: 120px;
+	margin: auto;
+}
+
+.form-block-q-content {
+	margin: auto;
+	color: white;
+}
+
+.form-block-q-content h2 {
+	font-weight: 600;
+	text-align: center;
+	font-size: 55px;
+}
+
+.form-block {
+	position: relative;
+	font-family: "Montserrat";
+	padding-top: 120px;
+}
+
+.form-block-content {
+	color: white;
+}
+
+.form-block-content h2 {
+	font-weight: 600;
+	text-align: center;
+	font-size: 55px;
+}
+
+.form-block-form__text h3 {
+	font-weight: bold;
+	font-size: 24px;
+	color: black;
+}
+
+.form-block-form {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1270px;
+	margin: auto;
+	height: 448px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 30px 1px rgba(0,0,0,0.2);
+	margin-top: -350px;
+}
+
+.form-block-form__img { margin: -30px 0 0 -30px;}
+
+.form-block-form__img-adapt { display: none; }
+
+.form-block-form__text { width: 740px; margin: 30px 0 0 30px;}
+
+.form-block-form__text1 { width: 580px; height: 308px; position: relative; }
+
+.form-block-form__input { 
+	display: flex; 
+	justify-content: space-between;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px; 
+}
+
+.form-block-form__input input { border: none; border-bottom: 1px solid grey; width: 345px; }
+
+.form-block-form__button-accept { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; }
+
+.form-block-form__button-accept input[type="button"] {
+	width: 220px;
+	height: 60px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #EF7F1A;
+	border-radius: 10px;
+	outline: 0;
+	border: none;
+	cursor: pointer;
+}
+
+.form-block-form__button-accept div { 
+	width: 345px;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px; 
+}
+
+.form-block-form__button-accept a { 
+	text-decoration: none; 
+	text-decoration-line: underline; 
+	color: #EF7F1A; 
+	cursor: pointer; 
+}

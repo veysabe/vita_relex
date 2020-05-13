@@ -1,0 +1,39 @@
+body { 
+	margin: auto; 
+}
+
+.main-block {
+	position: relative;
+	font-family: "Montserrat";
+	height: 500px;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/imgtwo.png');
+	background-position: center;
+	background-size: cover;
+	padding: 120px 0 120px 0;
+	margin: auto;
+}
+
+.main-block__text {
+	color: white;
+	text-align: center;
+}
+
+.main-block__text h1 {
+	font-weight: 700;
+	font-size: 64px;
+}
+
+.main-block__text p {
+	font-size: 24px;
+}
+
+.main-block__text hr { width: 100px; margin-top: -20px;}
+
+.main-block__arrow {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	bottom: 100px;
+	transform: translate(-50%,-0);
+}
+

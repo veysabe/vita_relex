@@ -1,0 +1,40 @@
+.info-block {
+	font-family: "Montserrat";
+	height: 632px;
+	background-color: #FFFFFF;
+	padding-top: 120px;
+	margin: auto;
+}
+
+.info-block-content {
+	color: white;
+	margin: auto;
+	width: 1270px;
+}
+
+.info-block-content h2 {
+	font-weight: 600;
+	text-align: center;
+	font-size: 55px;
+	color: black;
+}
+
+.info-block-content-info {
+	display: flex;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	justify-content: space-between;
+}
+
+.info-block-content-info__text { width: 28%; text-align: justify; }
+
+.info-block-content hr { width: 100px; margin-top: 30px; margin-bottom: 50px;}
+
+.info-block-content-info-adapt { 
+	display: none; 
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.75;
+	text-align: left;
+}

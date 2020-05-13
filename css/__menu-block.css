@@ -1,0 +1,48 @@
+.menu-block { 
+	border-bottom: 1px solid gray; 
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 200ms linear;
+	width: 100%;
+	margin: auto;
+}
+
+.menu-block.scroll {
+  background-color: black !important;
+  transition: background-color 200ms linear;
+}
+
+.menu__all {
+	font-family: "Montserrat";
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	width: 1270px;
+}
+.menu__choise {
+	list-style: none;
+	padding: 0 0 5px;
+}
+.menu__choise li {
+	display: inline-block;
+}
+.menu__choise a {
+	text-decoration: none;
+	margin: 0 27px;
+	font-size: 14px;
+	transition: color .2s;
+}
+
+.menu__choise a, .menu__choise a:visited { color: white; }
+.menu__choise a.current, .menu__choise a:hover { color: #FF6600; } 
+
+.menu__number { color: white; text-decoration: none; display: flex; align-items: center;}
+
+.menu__number img { padding-right: 10px; }
+
+

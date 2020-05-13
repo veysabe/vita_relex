@@ -1,0 +1,76 @@
+.qa-block {
+	position: relative;
+	font-family: "Montserrat";
+	height: 500px;
+	padding-top: 120px;
+	padding-bottom: 240px;
+}
+
+.qa-block-content { margin: auto; }
+
+.qa-block-content h2 {
+	font-weight: 600;
+	text-align: center;
+	font-size: 55px;
+	color: black;
+}
+
+.qa-block-answers { 
+	width: 1070px; 
+	margin: auto;
+	flex-direction: column;
+	display: flex;
+}
+
+.qa-block-answers__card-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #002441;
+    border-bottom: 1.5px dashed #002441;
+    transition: 0.5s;
+    padding-bottom: 20px;
+    background: none;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.active, .qa-block-answers__card-title:hover {
+    color: #EF7F1A;
+}
+
+.active .qa-block-answers__card-circle { background: rgba(239, 127, 26, 0.5); }
+.active .qa-block-answers__card-circle:before { background: #EF7F1A; }
+.active .qa-block-answers__card-title-text { border-bottom: 1.5px dashed #EF7F1A; }
+
+.qa-block-answers__card-content {
+    color: #212121;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-left: 90px;
+}
+
+.qa-block-answers__card-circle {
+    margin: 2px 55px 0 0;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 141, 210, 0.5);
+    border-radius: 50%;
+    position: relative;
+    transition: color .3s linear;
+}
+
+.qa-block-answers__card-circle::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #008DD2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+}
+
+.qa-block-answers__card-title-text { border-bottom: 1.5px dashed #002441; }

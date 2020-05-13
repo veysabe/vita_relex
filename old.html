@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/__menu-block.css">
+		<link rel="stylesheet" href="css/__main-block.css">
+		<link rel="stylesheet" href="css/__info-block.css">
+		<link rel="stylesheet" href="css/__prog-block.css">
+		<meta charset="utf-8">
+		<title>хелло ворлд</title>
+	</head>
+
+	<body>
+		<div class="menu-block">
+
+			<div class="menu__all">
+				<a class="menu__logo" href="#"><img src="img/logo.png"></a>
+				<ul class="menu__choise">
+					<li><a href="#info-block" class="current">О нас</a></li>
+					<li><a href="#prog-block">Программы</a></li>
+					<li><a href="#">Хочу научиться</a></li>
+					<li><a href="#">Вопросы</a></li>
+				</ul>
+				<a class="menu__number" href="tel:+74732711711">+7 (473) 2-711-711</a>
+			</div>
+		</div>
+
+		<div class="main-block">
+			<div class="main-block__text">
+				<h1>Voronezh<br>IT Academy</h1>
+				<hr>
+				<p>Делимся знаниями и опытом<br>с теми, чья цель - развитие</p>
+			</div>
+			<a href="#info-block" class="main-block__arrow"><img src="img/arrow.png"></a>
+		</div>
+
+		<div class="info-block" id="info-block">
+			<div class="info-block-content">
+				<h2>О Voronezh IT Academy<h2>
+				<hr>
+				<div class="info-block-content-info">
+					<div class="info-block-content-info__text">
+						Главным достоянием РЕЛЭКС были и всегда будут люди и знания. Поэтому в компании издавна принято делиться всем, что знаешь и умеешь с теми, кто работает рядом. Если работаешь с профессионалами и для профессионалов, по-другому просто нельзя.
+					</div>
+
+					<div class="info-block-content-info__text">
+						В какой-то момент мы поняли, что наш практический опыт и навыки работы будут полезны всему IT-сообществу – и профессионалам и тем, кто делает первые шаги в разработке ПО. Так возникла Voronezh IT Academy или просто VITA. 
+					</div>
+
+					<div class="info-block-content-info__text">
+						На наших интенсивах мы рассказываем и показываем, как соединить опыт и знания и, используя разные технологии, получить нужный результат. В VITA нет фундаментальной вузовской программы – есть только то, что нужно для жизни.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="prog-block" id="prog-block">
+			<div class="prog-block-content">
+				<h2>Программы интенсивов</h2>
+				<div class="prog-block-content-info">
+					<a href="#" class="prog-block-content-info__text">
+						<h3>Java - интенсив</h3>
+						<hr>
+						<p>Поговорим об основных конструкциях и возможностях языка, обсудим все зачем и почему.</p>
+						<div class="prog-block-content-info__img">
+							<div class="prog-block-content-info__img-box"><img src="img/java.png"></div>
+						</div>
+					</a>
+					<a href="#" class="prog-block-content-info__text">
+						<h3>.net - итенсив</h3>
+						<hr>
+						<p>Изучим встроенные библиотеки Java: DateTime API, Collection Streams, Multithreading. То, что в той или иной степени используется в каждом приложении.</p>
+						<img src="img/net.png">
+					</a>
+					<a href="#" class="prog-block-content-info__text">
+						<h3>QA - интенсив</h3>
+						<hr>
+						<p>Научим пользоваться Gradle/Maven, разрабатывать web-приложения на Spring (и даже объясним, как оно работает) и работать с БД через Hibernate и MyBatis.</p>
+						<img src="img/qa.png">
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/__menu-script.js"></script>
+
+	</body>
+
+</html>
+
+
+.prog-block {
+	position: relative;
+	font-family: "Montserrat";
+	height: 888px;
+	background-color: #F1F2F6;
+	padding-top: 120px;
+}
+
+.prog-block-content {
+	color: white;
+}
+
+.prog-block-content h2 {
+	font-weight: 600;
+	text-align: center;
+	font-size: 55px;
+	color: black;
+}
+
+.prog-block-content h3 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+	color: black;
+}
+
+.prog-block-content-info {
+	width: 1270px;
+	display: flex;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.prog-block-content-info__box { 
+	text-decoration: none;
+	width: 28%;
+	height: 570px;
+	background-color: white;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+	border-radius: 10px;
+	position: relative;
+	flex-direction: column;
+	align-content: space-between;
+}
+
+.prog-block-content-info__text p {
+	text-align: center;
+	font-size: 16px;
+	color: black;
+	padding: 0 50px;
+}
+.prog-block-content hr { width: 100px; margin-top: 30px; margin-bottom: 30px; }
+.prog-block-content-info__box:hover h3, .prog-block-content-info__box:hover hr { 
+	color: #FF6600;
+	transition: .2s color; 
+}
+
+.prog-block-content-info__box:hover .prog-block-content-info__img-box::before
+{ background-color: rgba(255, 102, 0, .5); }
+
+.prog-block-content-info__img-box { position: absolute; width: 100%; bottom: 0;}
+
+.prog-block-content-info__img-box img { width: 100%; bottom: 0; }
+
+.prog-block-content-info__img-box::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(1, 125, 197, 0.5);
+	transition: all .3s ease;
+	border-radius: 0 0 10px 10px;
+}
+.prog-block-content-info__img { position: relative; }

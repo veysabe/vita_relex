@@ -1,0 +1,29 @@
+.cell-body {
+
+}
+
+.cell-row {
+	height: 100px;
+	margin: 10px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.cell-item {
+	width: 100px;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 0 5px;
+	transition: .6s all ease-in;
+}
+
+.cell-item:hover {
+	transition: .1s all ease-in;
+	background: black;
+}
+
+.cell-counter {
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+}

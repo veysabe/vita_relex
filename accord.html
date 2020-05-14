@@ -1,0 +1,169 @@
+<style type="text/css">
+
+.qa-block {
+  position: relative;
+  font-family: "Montserrat";
+  height: 500px;
+  padding-top: 120px;
+  padding-bottom: 240px;
+}
+
+.qa-block-content { margin: auto; }
+
+.qa-block-content h2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 55px;
+    color: black;
+}
+
+.qa-block-answers { 
+    width: 1070px; 
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+}
+
+.qa-block-answers__card {
+    width:100%;
+    font-family:'Open-sans',Arial,sans-serif;
+}
+
+.qa-block-answers__heading {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    color: #002441;
+    border-bottom: 1.5px dashed #002441;
+    transition: 0.5s;
+    padding-bottom: 20px;
+    background: none;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.qa-block-answers__card-circle {
+    margin: 2px 55px 0 0;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 141, 210, 0.5);
+    border-radius: 50%;
+    position: relative;
+    transition: color .3s linear;
+}
+
+.qa-block-answers__card-circle::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #008DD2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+}
+
+.qa-block-answers__card-title-text { border-bottom: 1.5px dashed #002441; }
+
+.close .qa-block-answers__content{
+    height:0px;
+    transition:height 1s ease-out;
+    transform: scaleY(0);
+    float:left;
+    display:block;
+}
+
+.open .qa-block-answers__content{
+    margin-left: 90px;
+    width: 100%;
+    display:block;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+}
+
+.open .qa-block-answers__heading{
+    color: #EF7F1A;
+    margin: 0px;
+}
+
+.open .qa-block-answers__card-circle { background: rgba(239, 127, 26, 0.5); }
+.open .qa-block-answers__card-circle:before { background: #EF7F1A; }
+.open .qa-block-answers__card-title-text { border-bottom: 1.5px dashed #EF7F1A; }
+
+</style>
+
+<div class="qa-block">
+  <div class="qa-block-content">
+    <h2>Ответы на часто<br>задаваемые вопросы</h2>
+    <div id="qa-block-answers" class="qa-block-answers">
+      <div class="qa-block-answers__card open">
+            <div class="qa-block-answers__heading">
+              <div class="qa-block-answers__card-circle"></div>
+              <div class="qa-block-answers__card-title-text">Сколько стоит обучение в академии?</div>
+            </div>
+            <div class="qa-block-answers__content">
+              <p>Обучение является бесплатным. Обучение является бесплатным. Обучение является бесплатным. является бесплатным. Обучение является бесплатным. Обучение является бесплатным.</p>
+            </div>
+          </div>
+
+          <div class="qa-block-answers__card close">
+            <div class="qa-block-answers__heading">
+              <div class="qa-block-answers__card-circle"></div>
+            <div class="qa-block-answers__card-title-text">Обучение онлайн или офлайн?</div>
+            </div>
+            <div class="qa-block-answers__content">
+              <p>Обучение является бесплатным. Обучение является бесплатным. Обучение является бесплатным. является бесплатным. Обучение является бесплатным. Обучение является бесплатным.</p>
+            </div>
+          </div>
+
+          <div class="qa-block-answers__card close">
+            <div class="qa-block-answers__heading">
+              <div class="qa-block-answers__card-circle"></div>
+              <div class="qa-block-answers__card-title-text">Существует ли возможность стажировки после прохождения курса?</div>
+            </div>
+            <div class="qa-block-answers__content">
+              <p>Обучение является бесплатным. Обучение является бесплатным. Обучение является бесплатным. является бесплатным. Обучение является бесплатным. Обучение является бесплатным.</p>
+            </div>
+          </div>
+
+          <div class="qa-block-answers__card close">
+            <div class="qa-block-answers__heading">
+              <div class="qa-block-answers__card-circle"></div>
+              <div class="qa-block-answers__card-title-text">Кто преподаватели?</div>
+            </div>
+            <div class="qa-block-answers__content">
+              <p>Обучение является бесплатным. Обучение является бесплатным. Обучение является бесплатным. является бесплатным. Обучение является бесплатным. Обучение является бесплатным.</p>
+            </div>
+          </div>
+
+          <div class="qa-block-answers__card close">
+            <div class="qa-block-answers__heading">
+              <div class="qa-block-answers__card-circle"></div>
+              <div class="qa-block-answers__card-title-text">Сколько длится обучение?</div>
+              </div>
+            <div class="qa-block-answers__content">
+              <p>Обучение является бесплатным. Обучение является бесплатным. Обучение является бесплатным. является бесплатным. Обучение является бесплатным. Обучение является бесплатным.</p>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    var accItem = document.getElementsByClassName('qa-block-answers__card');
+    var accHD = document.getElementsByClassName('qa-block-answers__heading');
+    for (i = 0; i < accHD.length; i++) {
+        accHD[i].addEventListener('click', toggleItem, false);
+    }
+    function toggleItem() {
+        var itemClass = this.parentNode.className;
+        for (i = 0; i < accItem.length; i++) {
+            accItem[i].className = 'qa-block-answers__card close';
+        }
+        if (itemClass == 'qa-block-answers__card close') {
+            this.parentNode.className = 'qa-block-answers__card open';
+        }
+    }
+</script>

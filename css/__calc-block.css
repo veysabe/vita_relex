@@ -1,0 +1,39 @@
+.calc-body {
+	margin: auto;
+	width: 400px;
+	height: 600px;
+	border: 1px solid rgba(153, 153, 153, 1);
+	background: rgba(87, 87, 87, 0.1);
+}
+
+.calc-display, .calc-display input {
+	height: 180px;
+	width: 100%;
+	font-size: 70px;
+	text-align: right;
+}
+
+.calc-row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 70px;
+}
+
+.calc-button-enter, .calc-button-command {
+	width: 95px;
+	height: 65px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 45px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all .2s linear;
+}
+
+.calc-button-enter:hover, .calc-button-command:hover {
+	background: rgba(149, 175, 191, 1);
+	transition: all .2s linear;
+}

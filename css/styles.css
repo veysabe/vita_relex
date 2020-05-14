@@ -6,3 +6,7 @@ html {
 }
 
 * { outline: none; }
+
+.swal2-popup * {
+	font-family: Montserrat !important;
+}
